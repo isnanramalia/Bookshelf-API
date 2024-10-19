@@ -8,7 +8,7 @@ Bookshelf API adalah sebuah RESTful API yang digunakan untuk mengelola data buku
 ## Persyaratan Sistem
 Sebelum menjalankan aplikasi ini, pastikan Anda telah menginstal perangkat lunak berikut:
 - **Node.js** (v14.x atau lebih baru): [Download dan Instal Node.js](https://nodejs.org/)
-- **Postman v 9** (untuk pengujian API): [Download dan Instal Postman](https://dl.pstmn.io/download/version/9.31.0/win64)
+- **Postman** (untuk pengujian API): [Download dan Instal Postman](https://www.postman.com/downloads/)
 
 ---
 
@@ -29,15 +29,13 @@ Sebelum menjalankan aplikasi ini, pastikan Anda telah menginstal perangkat lunak
 3. **Menjalankan Server**
    Jalankan server dengan perintah berikut:
    ```bash
-   node src/server.js
+   node server.js
    ```
    Anda akan melihat output berikut jika server berjalan dengan benar:
    ```
    Server berjalan pada http://localhost:9000
    ```
 
-4. **Menjalankan di FrontEnd dicoding (Opsional)**
-    frontEnd noteApp: http://notesapp-v1.dicodingacademy.com/
 ---
 
 ## Pengujian API dengan Postman
@@ -64,32 +62,25 @@ Sebelum menjalankan aplikasi ini, pastikan Anda telah menginstal perangkat lunak
 ## Struktur Folder dan File
 
 ```
-/BookshelfAPITestCollectionAndEnvironment
+/project-root
 │
+├── books.js                   # Data penyimpanan sementara untuk buku
+├── handler.js                 # Handler untuk setiap route
+├── routes.js                  # Definisi route untuk API
+├── server.js                  # Konfigurasi dan inisialisasi server
 ├── Bookshelf API Test.postman_collection.json  # File collection Postman
 ├── Bookshelf API Test.postman_environment.json # File environment Postman
-├── node_modules/                               # Dependencies
-├── src/
-│   ├── books.js                   # Data penyimpanan sementara untuk buku
-│   ├── handler.js                 # Handler untuk setiap route
-│   ├── routes.js                  # Definisi route untuk API
-│   └── server.js                  # Konfigurasi dan inisialisasi server
-├── .gitignore                     
-├── eslint.config.mjs               # Konfigurasi ESLint
-├── package.json                    # Daftar dependencies dan scripts
-├── package-lock.json               # File lock dependencies
-└── README.md                       # Dokumentasi proyek ini
+└── README.md                  # Dokumentasi proyek ini
 ```
 
 ---
 
 ## Catatan Tambahan
 - Pastikan tidak ada aplikasi lain yang menggunakan port **9000** saat menjalankan server ini.
-- Jika Anda ingin menggunakan port yang berbeda, ubah konfigurasi port di `src/server.js` dan sesuaikan environment Postman.
-- Eslint format dicoding: https://github.com/dicodingacademy/javascript-style-guide
-- Cek format kode `npx eslint .`, untuk fix `npx eslint . --fix`
+- Jika Anda ingin menggunakan port yang berbeda, ubah konfigurasi port di `server.js` dan sesuaikan environment Postman.
 
 ---
 
 ## Lisensi
 Proyek ini dilisensikan di bawah lisensi MIT.
+
