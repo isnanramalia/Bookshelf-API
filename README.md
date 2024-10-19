@@ -88,8 +88,4 @@ Sebelum menjalankan aplikasi ini, pastikan Anda telah menginstal perangkat lunak
 - Jika Anda ingin menggunakan port yang berbeda, ubah konfigurasi port di `src/server.js` dan sesuaikan environment Postman.
 - Eslint format dicoding: https://github.com/dicodingacademy/javascript-style-guide
 - Cek format kode `npx eslint .`, untuk fix `npx eslint . --fix`
-
----
-
-## Lisensi
-Proyek ini dilisensikan di bawah lisensi MIT.
+- Realted gitHub https://github.com/isnanramalia/LatihanBackend-NodeJS
